@@ -1,0 +1,38 @@
+class Producto {
+    private String nombre;
+    private String codigoBarras;
+    private double precio;
+    private int cantidadStock;
+
+    public Producto(String nombre, String codigoBarras, double precio, int cantidadStock) {
+        this.nombre = nombre;
+        this.codigoBarras = codigoBarras;
+        this.precio = precio;
+        this.cantidadStock = cantidadStock;
+    }
+
+    // Métodos para actualizar el stock, calcular valor, etc.
+}
+
+class Proveedor {
+    private String nombre;
+    private String direccion;
+    private String contacto;
+
+    public Proveedor(String nombre, String direccion, String contacto) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.contacto = contacto;
+    }
+
+    // Métodos para gestionar pedidos, rastrear historial, etc.
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Producto producto1 = new Producto("Vino Tinto", "123456789", 15.99, 100);
+        Proveedor proveedor1 = new Proveedor("Distribuidora XYZ", "Calle Principal 123", "contacto@distribuidora.com");
+        
+        // Realizar operaciones con objetos de las clases Producto y Proveedor
+    }
+}
